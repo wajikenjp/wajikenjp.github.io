@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+header {
+  text-align: center;
+  background: #f59a00;
+  padding-top: 64px;
+  color: #fff;
+}
+header h1,
+header p {
+  margin: 0;
+}
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff;
+  color: #f59a00;
+  text-decoration: none;
+  width: 140px;
+  display: block;
+  line-height: 44px;
+  margin: 40px auto 48px;
+  border-radius: 4px;
+}
+.btn:hover {
+  /* background: rgb(243, 229, 225); */
+  opacity: 0.9;
+}
+header img {
+  width: 280px;
+  vertical-align: bottom;
+}
+.feature img {
+  width: 100%;
+}
+.feature {
+  margin: 0 32px;
+}
+.feature > h1 {
+  font-weight: normal;
+  margin: 64px 0;
+  text-align: center;
+}
+.feature p {
+  line-height: 1.8;
+}
+.container section {
+  margin-bottom: 64px;
+}
+.member {
+  background-color: rgb(240, 236, 236);
+  /* text-align: center; */
+}
+.member ul {
+  list-style: none;
+  text-align: center;
+  /* font-size: 30px; */
+  margin: 0;
+  padding: 0;
+}
+.member h2 {
+  font-size: 20px;
+}
+.member > h1 {
+  padding: 64px 0;
+  text-align: center;
+  /* font-size: 24px; */
+  /* margin: 0; */
+  font-weight: normal;
+}
+.member img {
+  width: 160px;
+  border-radius: 50%;
+  /* justify-content: center; */
+}
+
+.member li {
+  padding-bottom: 30px;
+}
+
+.call-to-action {
+  background: #f59a00;
+  color: #fff;
+  text-align: center;
+  padding: 64px 0;
+}
+.call-to-action h1 {
+  font-size: 24px;
+}
+.call-to-action .btn {
+  margin: 0 auto;
+}
+footer {
+  background: rgb(43, 40, 40);
+  color: rgb(105, 97, 97);
+  text-align: center;
+  padding: 64px 0;
+}
+
+@media (min-width: 900px) {
+  header .container{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    /* justify-content: center; */
+
+  }
+  header .info {
+    width: 60%;
+    align-self: center;
+  }
+  header .pic {
+    width: 40%;
+  }
+  .feature .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .feature section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .feature .pic {
+    width: 50%;
+  }
+  .feature .info {
+    width: calc(50% - 32px);
+  }
+  .feature section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .member ul {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .member li {
+    width: 250px;
+    /* padding: 0 24px; */
+  }
+}
